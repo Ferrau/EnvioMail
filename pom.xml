@@ -45,7 +45,7 @@
 		</dependency>
 		
 		<!-- Conexion bd -->
-		<!--<dependency>
+		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<scope>runtime</scope>
@@ -53,7 +53,7 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
-		</dependency>-->
+		</dependency>
 		<!--End Conexion bd -->
 	</dependencies>
 	<build>

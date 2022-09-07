@@ -2,31 +2,32 @@ package com.ferrau.EnvioMail.model;
 
 
 
-//import javax.persistence.*;
+import javax.persistence.*;
 
-//@Entity
-//@Table(name = "mail")
+@Entity
+@Table(name = "mail")
 public class Mail{
 		
 		
-		//@GeneratedValue(strategy = GenerationType.IDENTITY)
-		//@Id
-		//@Column(name = "id")
-		//private Long id;
 		
-		//@Column(name = "to")
+		@Id
+		@GeneratedValue(strategy = GenerationType.IDENTITY)
+		@Column(name = "id")
+		private int id;
+		
+		@Column(name = "Too")
 	    private String to;
-		//@Column(name = "subject")
+		@Column(name = "subject")
 	    private String subject;
-		//@Column(name = "message")
+		@Column(name = "MMessage")
 	    private String message;
 		
-		//public Long getId() {
-			//return id;
-		//}
-//		public void setId(Long id) {
-//			this.id = id;
-//		}
+		public int getId() {
+			return id;
+		}
+		public void setId(int id) {
+			this.id = id;
+		}
 		public String getTo() {
 			return to;
 		}
